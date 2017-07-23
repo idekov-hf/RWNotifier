@@ -39,7 +39,6 @@ class TutorialsViewController: UIViewController {
   }
   
   func refresh() {
-    print("refreshing")
     parser.downloadAndParse()
   }
   
@@ -63,7 +62,6 @@ extension TutorialsViewController: UITableViewDataSource {
 
 extension TutorialsViewController: ParserDelegate {
   func didFinishParsing(tutorials: [Tutorial]) {
-    print("Finish parsing feed")
     self.tutorials = tutorials
     tableView.reloadData()
     if refreshControl.isRefreshing {
