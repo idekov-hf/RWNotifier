@@ -10,19 +10,19 @@ import Foundation
 
 class Parser: NSObject {
   
+  var url: URL
   var tutorials = [Tutorial]()
   var xmlParser: XMLParser!
   weak var delegate: ParserDelegate?
-  
   var tutorial: Tutorial?
   var element = ""
   
   init(url: String) {
+    self.url = URL(string: url)!
     super.init()
-    downloadXMLFrom(url: URL(string: url)!)
   }
   
-  func downloadXMLFrom(url: URL) {
+  func downloadAndParse() {
     let urlSession = URLSession.shared
     urlSession.dataTask(with: url) { (data, response, error) in
       if let data = data {
@@ -34,10 +34,6 @@ class Parser: NSObject {
   func setupXMLParser(data: Data) {
     xmlParser = XMLParser(data: data)
     xmlParser.delegate = self
-    xmlParser.parse()
-  }
-  
-  func parse() {
     xmlParser.parse()
   }
   

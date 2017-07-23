@@ -19,6 +19,7 @@ class TutorialsViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     parser.delegate = self
+    parser.downloadAndParse()
     setupRefreshControl()
   }
   
@@ -39,7 +40,7 @@ class TutorialsViewController: UIViewController {
   
   func refresh() {
     print("refreshing")
-    parser.parse()
+    parser.downloadAndParse()
   }
   
 }
