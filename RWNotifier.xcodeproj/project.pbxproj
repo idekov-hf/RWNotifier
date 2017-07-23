@@ -17,6 +17,7 @@
 		5D920D4A1ECA613700396A3F /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D920D491ECA613700396A3F /* Parser.swift */; };
 		5D920D4C1ECA6FBA00396A3F /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D920D4B1ECA6FBA00396A3F /* Tutorial.swift */; };
 		5D9E16701EEC7061000E2490 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E166F1EEC7061000E2490 /* GoogleService-Info.plist */; };
+		5DC9B7AC1F246FC8004678F3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC9B7AB1F246FC8004678F3 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		5D920D491ECA613700396A3F /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		5D920D4B1ECA6FBA00396A3F /* Tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 		5D9E166F1EEC7061000E2490 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5DC9B7AB1F246FC8004678F3 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		FFA4509A03374CABF3470DBE /* Pods-RWNotifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWNotifier.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RWNotifier/Pods-RWNotifier.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 				5D920D371ECA604200396A3F /* AppDelegate.swift */,
 				5D920D391ECA604200396A3F /* TutorialsTableViewController.swift */,
 				5D4C58681ECD0D7100DC03EE /* TutorialViewController.swift */,
+				5DC9B7AB1F246FC8004678F3 /* WebViewController.swift */,
 				5D920D491ECA613700396A3F /* Parser.swift */,
 				5D920D4B1ECA6FBA00396A3F /* Tutorial.swift */,
 				5D920D3B1ECA604200396A3F /* Main.storyboard */,
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D920D3A1ECA604200396A3F /* TutorialsTableViewController.swift in Sources */,
+				5DC9B7AC1F246FC8004678F3 /* WebViewController.swift in Sources */,
 				5D920D4C1ECA6FBA00396A3F /* Tutorial.swift in Sources */,
 				5D4C58691ECD0D7100DC03EE /* TutorialViewController.swift in Sources */,
 				5D920D381ECA604200396A3F /* AppDelegate.swift in Sources */,

@@ -22,4 +22,9 @@ class TutorialViewController: UIViewController {
     dateLabel.text = tutorial?.pubDate
     descriptionLabel.text = tutorial?.description
   }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let webViewVC = segue.destination as! WebViewController
+    webViewVC.url = URL(string: tutorial!.link)
+  }
 }

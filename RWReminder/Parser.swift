@@ -56,6 +56,8 @@ extension Parser: XMLParserDelegate {
       tutorial?.pubDate.append(string)
     case "description":
       tutorial?.description.append(string)
+    case "link":
+      tutorial?.link.append(string)
     default:
       break
     }
@@ -64,6 +66,7 @@ extension Parser: XMLParserDelegate {
   func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
     if elementName == "item" {
       tutorial?.title = tutorial!.title.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+      tutorial?.link = tutorial!.link.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
       
       let index = tutorial!.pubDate.index(tutorial!.pubDate.startIndex, offsetBy: 16)
       tutorial?.pubDate = tutorial!.pubDate.substring(to: index)
